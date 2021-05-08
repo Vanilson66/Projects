@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="qwe.css">
+</head>
+<body>
+    <div class="display">
+        <div class="options">
+            <div class="things">
+                <span>
+                    <h1>Degraus</h1>
+                    <div>
+                        <button onclick="alterarQuantidade('aumentar')">+</button>
+                            <div class="quantidade">
+                                <p>0</p>
+                            </div>
+                        <button onclick="alterarQuantidade('diminuir')">-</button>
+                    </div>
+                </span>
+                <span>
+                    <p>Cor do primeiro degrau:</p>
+                    <div class="colorFirst" onclick="alterarCor(1,'images/degrauPersonalizado.png')"></div>
+                    <div class="colorSecond" onclick="alterarCor(1,'images/degrauPersonalizado2.png')"></div>
+                </span>
+                <span>
+                    <p>Cor do ultimo degrau:</p>
+                    <div class="colorFirst" onclick="alterarCor(2,'images/lastDegrauPersonalizado.png')"></div>
+                    <div class="colorSecond" onclick="alterarCor(2,'images/lastDegrauPersonalizado2.png')"></div>
+                </span>
+                <span>
+                    <button class="finalizar" onclick="criarEscada()">CONSTRUIR</button>
+                </span>
+            </div>
+        </div>
+        <div class="result">
+        </div>
+    </div>
+
+
+    <script src="qwe.js"></script>
+</body>
+</html>
